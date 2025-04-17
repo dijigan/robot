@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra/Papel/Tijera</title>
+
+    <link rel="stylesheet" href="css/juego.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <h2 class="header_title">Piedra, Papel o Tijera</h2>
+    </header>
+
+    <main class="main_container">
+        <div class="vs_container">
+
+            <div class="player">
+                <img id="player1" src="assets/persona.svg" alt="">
+                <p>Player 1</p>
+                <p id="ptos_player1">0</p>
+            </div>
+
+            <div class="vs">
+                <h3 id="result">VS</h3>
+            </div>
+
+            <div class="player">
+                <img id="player2" src="assets/cpu.svg" alt="">
+                <p>Player 2</p>
+                <p id="ptos_player2">0</p>
+            </div>
+
+        </div>
+        <div class="game_container">
+
+            <div class="game_options">
+                    <button id="piedra" class="option_piedra">
+                        <img src="assets/piedra.svg" alt="">
+                    </button>
+                    <button id="papel" class="option_papel">
+                        <img src="assets/papel.svg" alt="">
+                    </button>
+                    <button id="tijera" class="option_tijera">
+                        <img src="assets/tijera.svg" alt="">
+                    </button>
+            </div>
+
+            <div class="details">
+                <p>Piedra ganará contra tijera y perderá contra papel</p>
+                <p>Papel ganará contra piedra y perderá contra tijera</p>
+                <p>Tijera ganará contra papel y perderá contra piedra</p>
+            </div>
+
+        </div>
+        <div class="start_game">
+            <button id="start_game">
+                <img src="assets/play.svg" alt="">
+            </button>
+            <button id="reset">
+                <img src="assets/reset.svg" alt="">
+            </button>
+        </div>
+
+    </main>
+    <script src="js/juego.js"></script>
+</body>
+</html>
